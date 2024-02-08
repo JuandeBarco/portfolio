@@ -24,3 +24,6 @@ app.mount('#app')
 
 /*  Use Font Awesome */
 app.component('font-awesome-icon', FontAwesomeIcon)
+
+/* Global Properties */
+app.config.globalProperties.$apiUrl = import.meta.env.VITE_API_URL

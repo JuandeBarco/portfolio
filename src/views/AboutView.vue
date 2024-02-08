@@ -4,6 +4,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'AboutView',
+  mounted() {
+    console.log('AboutView mounted. Access global property apiUrl:', this.$apiUrl)
+  }
+}
+</script>
+
 <style>
 @media (min-width: 1024px) {
   .about {
