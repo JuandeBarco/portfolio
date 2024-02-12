@@ -4,8 +4,8 @@ import Navbar from '../components/Navbar.vue';
 
 <template>
   <Navbar />
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="contact">
+    <h1>This is a contact page</h1>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
 
 <style>
 @media (min-width: 1024px) {
-  .about {
+  .contact {
     min-height: 90vh;
     display: flex;
     align-items: center;
