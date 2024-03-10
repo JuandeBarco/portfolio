@@ -27,3 +27,5 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 
 /* Global Properties */
 app.config.globalProperties.$apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:3000'
+app.config.globalProperties.$linkedinUrl = import.meta.env.VITE_LINKEDIN_URL ?? 'https://www.linkedin.com/'
+app.config.globalProperties.$githubUrl = import.meta.env.VITE_GITHUB_URL ?? 'https://github.com/'

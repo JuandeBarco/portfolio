@@ -1,11 +1,22 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
+import ContactItem from '@/components/ContactItem.vue';
 </script>
 
 <template>
   <Navbar />
+  <div>
+    <h1 class="text-center">Contact</h1>
+  </div>
   <div class="contact">
-    <h1>This is a contact page</h1>
+    <ContactItem
+      :contactName="'LinkedIn'"
+      :contactLogo="'linkedin.png'"
+    />
+    <ContactItem
+      :contactName="'GitHub'"
+      :contactLogo="'github.png'"
+    />
   </div>
 </template>
 
@@ -14,7 +25,7 @@ export default {
   name: 'AboutView',
   mounted() {
     console.log('AboutView mounted. Access global property apiUrl:', this.$apiUrl)
-  }
+  },
 }
 </script>
 
